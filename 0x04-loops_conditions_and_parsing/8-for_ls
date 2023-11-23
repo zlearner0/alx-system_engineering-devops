@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# displays folder content without numbering
+
+li=$(ls)
+for i in $li;
+do
+echo "$i" | cut -d '-' -f 2
+done
