@@ -3,9 +3,9 @@ server {
         listen [::]:80;
         add_header X-Served-By $HOSTNAME;
 
-        server_name 35.175.126.203;
+        server_name 54.173.255.31;
 
-        root /var/www/school;
+        root /var/www/AirBnB_clone_v2;
         index index.html;
 
         # Serve /airbnb-onepage/ route from AirBnB_clone_v2
@@ -18,7 +18,7 @@ server {
         }
 
         location /hbnb_static/ {
-            alias /data/web_static/current/;
+            alias /var/www/AirBnB_clone_v2/web_static/;
             index index.html 1-index.html;
         }
 
